@@ -21,22 +21,22 @@ public class Main
         {
             if (name.equals(((String) name).toUpperCase()))
             {
-                greetingShout((String) name);
+                greeting = greetingShout((String) name);
             }
             else
             {
-                standardGreeting((String) name);
+                greeting = standardGreeting((String) name);
             }
         }
         if(name instanceof String[])
         {
             if(((String[]) name).length == 2)
             {
-                twoNameGreeting((String[]) name);
+                greeting = twoNameGreeting((String[]) name);
             }
             else if(((String[]) name).length > 2)
             {
-                manyNamesGreeting((String[]) name);
+                greeting = manyNamesGreeting((String[]) name);
             }
         }
         return greeting;
